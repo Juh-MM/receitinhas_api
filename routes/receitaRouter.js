@@ -6,7 +6,7 @@ const router = express.Router();
 // Rotas de plantações
 router.post('/', createReceita);
 router.get('/', getReceitas);  
-router.put('/', updateReceita);
-router.delete('/', deleteReceita); // Rota para deletar receita
+router.put('/:id', updateReceita);
+router.delete('/:id', deleteReceita); // Rota para deletar receita
 
 export default router; 
