@@ -6,7 +6,7 @@ const receitaSchema = new mongoose.Schema({
     modoPreparo: { type: [String], required: true },
     tempoPreparo: { type: Number, required: true }, // em minutos 
     rendimento: { type: String, required: false }, // ex: "4 porções"
-    categoria: { type: String, required: true,
+    categoria: { type: String, required: false,
         enum: ['sobremesa', 'lanche', 'bebida', 'almoço', 'janta', 'cafe da manha', 'vegano', 'outro']},
     anotacao : { type: String, required: false }, 
 });
